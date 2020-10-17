@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Restaurants from './Restaurants';
 import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 
@@ -11,7 +11,7 @@ axios.get(apiUrlGetRestaurants).then((response) => {
 
   ReactDOM.render(
     <React.StrictMode>
-      <App restaurants={restaurants} onOrder={order} />
+      <Restaurants restaurants={restaurants} onOrder={order} />
     </React.StrictMode>,
     document.getElementById('root')
   );

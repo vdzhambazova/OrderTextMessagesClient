@@ -1,7 +1,7 @@
 import React from 'react';
 import { Restaurant } from "./models/Restaurant";
 
-const App = (props: any) => {
+const Restaurants = (props: any) => {
   return <>
     {props.restaurants.map((r: Restaurant) => {
       return (<table key={r.id}>
@@ -19,4 +19,4 @@ const App = (props: any) => {
   </>
 }
 
-export default App;
+export default Restaurants;
